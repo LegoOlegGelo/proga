@@ -22,6 +22,8 @@ bool pop(Stack*& stack, char& val)
 
     val = stack->b;
     stack = stack->next;
+    
+    return true;
 }
 
 bool peek(Stack* stack, char& val)
