@@ -10,5 +10,8 @@ int main()
     add_unique(list, 3);
     add_unique(list, 2);
 
+    insert_unique(list, 0, 0);
+    insert_unique(list, 0, 2);
+
     show(list);
 }

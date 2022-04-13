@@ -14,4 +14,5 @@ bool remove(elem*& first, int pos);
 void clear(elem*& first);
 
 void add_unique(elem*& list, int val);
+void insert_unique(elem*& first, int data, int pos);
 void show(elem* list);

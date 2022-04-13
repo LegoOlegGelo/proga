@@ -130,6 +130,21 @@ void add_unique(elem*& list, int val)
     add(list, val);
 }
 
+void insert_unique(elem*& list, int data, int pos)
+{
+    elem* cur = list;
+
+    while (cur)
+    {
+        if (data == cur->a)
+            return;
+
+        cur = cur->next;
+    }
+
+    insert(list, data, pos);
+}
+
 void show(elem* list)
 {
     while (list)
