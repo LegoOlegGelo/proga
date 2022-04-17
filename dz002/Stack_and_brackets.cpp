@@ -31,7 +31,7 @@ int check_expression(const char* exp)
 {
     Stack* brackets = nullptr;
     char val;
-    int first_open_bracket = -1;
+    int last_open_bracket = -1;
 
     for (size_t i = 0; i < strlen(exp); i++)
     {
@@ -41,7 +41,7 @@ int check_expression(const char* exp)
         {
             push(brackets, exp[i]);
 
-			if (first_open_bracket == -1) first_open_bracket = i;
+			last_open_bracket = i;
         }
 
 		else if (b_type < 0) // close bracket
@@ -58,7 +58,7 @@ int check_expression(const char* exp)
     }
 
     if (brackets != nullptr)
-        return first_open_bracket;
+        return last_open_bracket;
     
     return -1;
 }
