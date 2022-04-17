@@ -31,7 +31,7 @@ int check_expression(const char* exp)
 {
     Stack* brackets = nullptr;
     char val;
-    int last_open_bracket = -1;
+    int first_open_bracket = -1;
 
     for (size_t i = 0; i < strlen(exp); i++)
     {
@@ -40,19 +40,27 @@ int check_expression(const char* exp)
         if (b_type > 0) // open bracket
         {
             push(brackets, exp[i]);
-            last_open_bracket = i;
+
+			if (first_open_bracket == -1) first_open_bracket = i;
         }
 
-        else if (b_type < 0) // close bracket
-            if (pop(brackets, val))
-                if (close_brackets[get_open_bracket_index(val)] != exp[i])
-                    return i;
+		else if (b_type < 0) // close bracket
+		{
+			if (pop(brackets, val))
+			{
+				if (close_brackets[get_open_bracket_index(val)] != exp[i])
+					return i;
+			}
+			else
+				return i;
+		}
+			
     }
 
     if (brackets != nullptr)
-        return last_open_bracket;
+        return first_open_bracket;
     
-    return 0;
+    return -1;
 }
 
 int main()
@@ -61,7 +69,7 @@ int main()
     const char* exp = "{()}";
     int res = check_expression(exp);
  
-    if (res == 0)
+    if (res == -1)
         cout << "good expression" << endl;
     else
         cout << "bad expression: " << res << endl;

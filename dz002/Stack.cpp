@@ -32,6 +32,7 @@ bool peek(Stack* stack, char& val)
         return false;
 
     val = stack->b;
+    return true;
 }
 
 void print(Stack*& stack)
