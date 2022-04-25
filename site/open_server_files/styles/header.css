@@ -1,0 +1,29 @@
+header {
+    padding: 10px 15% 10px 15%;
+    background-color: rgb(1, 57, 71);
+    vertical-align: middle;
+    border-bottom: 2px solid rgb(0, 41, 51);
+}
+
+.header-menu {
+    float: right;
+    height: 100%;
+}
+
+.header-menu-item {
+    color: #fff;
+    margin: auto 15px auto 15px;
+    display: inline-block;
+    text-decoration: none;
+    height: 100%;
+}
+
+.site-name {
+    color: #fff;
+    display: inline-block;
+}
+
+header *:hover {
+    color: rgb(255, 174, 0);
+    transition: 0.7s;
+}

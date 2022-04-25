@@ -1,0 +1,31 @@
+.cart-item {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0 0 0;
+
+    text-align: center;
+}
+
+.cart-item-information {
+    display: inline-block;
+}
+
+.cart-item-image {
+    max-width: 15%;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.cart-flush-btn {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(235, 137, 137);
+}
+
+.div-for-btn {
+    text-align: center;
+}
+
+.itogo-price {
+    padding: 10px;
+}

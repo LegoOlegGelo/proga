@@ -1,0 +1,17 @@
+.card-image {
+    padding: 10px;
+    width: calc(30% - 2 * 10px);
+    display: inline-block;
+    border-radius: 32px;
+}
+
+.card-data {
+    float: right;
+    padding: 10px;
+    width: calc(70% - 2 * 10px);
+    display: inline-block;
+}
+
+.card-text {
+    color: #fff;
+}

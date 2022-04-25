@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>NFT Shop</title>
+
+
+<!--###HEAD_META###-->
+
+</head>
+<body>
+<!--###HEADER###-->
+
+    <div class="content">
+        <div class="content-center">
+            <h2 class="content-text">NFT Store</h2>
+        </div>
+
+        <div>
+            <form action="/index.cgi" method="POST">
+                <input type="text" name="text">
+                <input type="submit">
+            </form>
+        </div>
+
+<!--###LIST###-->
+
+    </div>
+
+<!--###FOOTER###-->
+</body>
+</html>

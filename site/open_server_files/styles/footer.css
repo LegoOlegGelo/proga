@@ -1,0 +1,10 @@
+footer {
+    padding: 10px 15% 10px 15%;
+    background-color: rgb(22, 22, 22);
+    color: rgb(255, 255, 255);
+    text-align: center;
+
+    vertical-align: middle;
+
+    min-height: 150px;
+}
